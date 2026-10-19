@@ -9,7 +9,7 @@ void solve()
 {
     int a, b, c;
     cin >> a >> b >> c;
-    if ((a + c) % 2b == 0 or ((2b - c) >= 0 and (2b - c) % a == 0) or ((2b - a) >= 0 and (2b - a) % c == 0))
+    if (((a + c) % 2 == 0 and ((a + c) / 2) % b == 0) or ((2 * b - c) > 0 and (2 * b - c) % a == 0) or ((2 * b - a) > 0 and (2 * b - a) % c == 0))
     {
         cout << "YES";
     }
@@ -29,6 +29,12 @@ int main()
     while (t--)
     {
         solve();
+        cout << "\n";
+    }
+
+    return 0;
+}
+
         cout << "\n";
     }
 
